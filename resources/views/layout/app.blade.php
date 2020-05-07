@@ -27,5 +27,8 @@
 
 	<!--====== Javascripts & Jquery ======-->
 	<script src="{{asset('js/app.js')}}"></script>
+	<script type="script/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0YyDTa0qqOjIerob2VTIwo_XVMhrruxo"></script>
 </body>
 </html>
+
+kjhgjkgnfjkngfhfddffdfhfgscvcbjgfdnfghnrethgfhsgfhfgghggfdhdvcbhjkhgrty

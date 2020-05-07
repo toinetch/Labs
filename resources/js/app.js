@@ -5,3 +5,4 @@ require('./magnific-popup.min.js');
 require('./owl.carousel.min.js');
 require('./circle-progress.min.js');
 require('./main.js');
+require('./map.js');

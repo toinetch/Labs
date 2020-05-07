@@ -11054,6 +11054,8 @@ __webpack_require__(/*! ./owl.carousel.min.js */ "./resources/js/owl.carousel.mi
 __webpack_require__(/*! ./circle-progress.min.js */ "./resources/js/circle-progress.min.js");
 
 __webpack_require__(/*! ./main.js */ "./resources/js/main.js");
+
+__webpack_require__(/*! ./map.js */ "./resources/js/map.js");
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
 /***/ }),
@@ -17141,6 +17143,39 @@ function progressCircle() {
   accordions();
   progressCircle();
 })(jQuery);
+
+/***/ }),
+
+/***/ "./resources/js/map.js":
+/*!*****************************!*\
+  !*** ./resources/js/map.js ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function initialize() {
+  var myOptions = {
+    zoom: 15,
+    center: new google.maps.LatLng(40.801485408197856, -73.96745953467104),
+    //change the coordinates
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    scrollwheel: false,
+    mapTypeControl: false,
+    zoomControl: false,
+    streetViewControl: false
+  };
+  var map = new google.maps.Map(document.getElementById("map-area"), myOptions);
+  var marker = new google.maps.Marker({
+    map: map,
+    position: new google.maps.LatLng(40.801485408197856, -73.96745953467104) //change the coordinates
+
+  });
+  google.maps.event.addListener(marker, "click", function () {
+    infowindow.open(map, marker);
+  });
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
 
 /***/ }),
 
