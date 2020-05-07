@@ -12,6 +12,7 @@
 			<li><a href="/blog">Blog</a></li>
 			<li><a href="/contact">Contact</a></li>
 			<li><a href="/elements">Elements</a></li>
+			<li><a href="/admin">Admin</a></li>
 		</ul>
 	</nav>
 </header>

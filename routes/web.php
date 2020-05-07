@@ -32,3 +32,7 @@ Route::get('/blog', function() {
 Route::get('/services', function() {
     return view('templates.servces.index');
 });
+
+Route::get('/admin', function() {
+    return view('admin.index');
+});
