@@ -36,3 +36,23 @@ Route::get('/services', function() {
 Route::get('/admin', function() {
     return view('admin.index');
 });
+
+Route::get('/admin/home', function() {
+    return view('admin.home');
+});
+
+Route::get('/admin/services', function() {
+    return view('admin.services');
+});
+
+Route::get('/admin/blog', function() {
+    return view('admin.blog');
+});
+
+Route::get('/admin/contact', function() {
+    return view('admin.contact');
+});
+
+Route::get('/admin/elements', function() {
+    return view('admin.elements');
+});

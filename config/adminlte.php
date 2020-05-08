@@ -167,7 +167,7 @@ return [
 
     'use_route_url' => false,
 
-    'dashboard_url' => 'home',
+    'dashboard_url' => '/admin',
 
     'logout_url' => 'logout',
 
@@ -219,35 +219,41 @@ return [
             'can'  => 'manage-blog',
         ],
         [
-            'text'        => 'pages',
-            'url'         => 'admin/pages',
-            'icon'        => 'far fa-fw fa-file',
-            'label'       => 4,
-            'label_color' => 'success',
+            'text'        => 'Retour au site',
+            'url'         => '/',
+            'icon'        => 'fas fa-arrow-left',
         ],
+        [
+            'text' => 'Dashboard',
+            'url' => '/admin',
+            'icon' => 'fas fa-tachometer-alt'
+        ],
+
         ['header' => 'account_settings'],
         [
-            'text' => 'profile',
-            'url'  => 'admin/settings',
+            'text' => 'Page Home',
+            'url'  => '/admin/home',
             'icon' => 'fas fa-fw fa-user',
         ],
         [
-            'text' => 'change_password',
-            'url'  => 'admin/settings',
+            'text' => 'Page Services',
+            'url'  => '/admin/services',
             'icon' => 'fas fa-fw fa-lock',
         ],
-        ['header' => 'labels'],
         [
-            'text'       => 'important',
-            'icon_color' => 'red',
+            'text' => 'Page Blog',
+            'url'  => '/admin/blog',
+            'icon' => 'fas fa-blog',
         ],
         [
-            'text'       => 'warning',
-            'icon_color' => 'yellow',
+            'text' => 'Page Contact',
+            'url'  => '/admin/contact',
+            'icon' => 'fas fa-address-book',
         ],
         [
-            'text'       => 'information',
-            'icon_color' => 'cyan',
+            'text' => 'Page Elements',
+            'url'  => '/admin/elements',
+            'icon' => 'fas fa-edit',
         ],
     ],
 
