@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Menu;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,10 +38,6 @@ Route::get('/admin', function() {
     return view('admin.index');
 });
 
-Route::get('/admin/home', function() {
-    return view('admin.home');
-});
-
 Route::get('/admin/services', function() {
     return view('admin.services');
 });
@@ -55,4 +52,8 @@ Route::get('/admin/contact', function() {
 
 Route::get('/admin/elements', function() {
     return view('admin.elements');
+});
+
+Route::get('/admin/home', function() {
+    return view('admin/home');
 });
